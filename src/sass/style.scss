@@ -1,0 +1,139 @@
+// Style plagin
+@import "variables";
+
+// @import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+
+// My style
+
+@import "grid-mixins";
+
+@import "functions";
+
+@import "fonts";
+@import "global";
+
+//@import "../blocks/companents/btn/btn";
+
+@import "../blocks/project/page-header/page-header";
+@import "../blocks/project/page-footer/page-footer";
+//@import "../blocks/project/order-page/order-page";
+
+body {
+ max-width: 505px;
+ width: 100%;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+table {
+ width: 100%;
+}
+
+img {
+ width: 100%;
+}
+
+.ident {
+ margin-bottom: 15px;
+}
+
+.row {
+ @include row();
+}
+
+.col-4 {
+ @include make-col(4)
+}
+
+.col-8 {
+ @include make-col(8)
+}
+
+.col-6 {
+ @include make-col(6)
+}
+
+.header__logo {
+ max-width: 115px;
+}
+
+.text-info__title {
+  display: block;
+  margin-bottom: 4px;
+  line-height: initial;
+  font-weight: 700;
+}
+
+.text-info__wrap {
+  margin-bottom: 9px;
+  line-height: 12px;
+}
+
+.text-info__wrap--ru .text-info__title {
+  color: $color-danger;
+}
+
+.text-info__wrap--eng {
+  color: #777776;
+  font-size: 7px;
+  line-height: 11px;
+}
+
+.text-info + .text-info {
+  margin-top: 25px;
+}
+
+.info-detail {
+  margin-bottom: 15px;
+}
+
+.info-detail td:first-child {
+  font-weight: 700;
+  min-width: 120px;
+  padding-right: 10px;
+}
+
+.info-detail tr:last-child td {
+  padding-bottom: 0;
+}
+
+.info-detail td {
+  padding-bottom: 6px;
+  vertical-align: top;
+}
+
+.info-detail__text {
+  &--rus {
+    color: $color-danger;
+  }
+}
+
+.info-detail__text + .info-detail__text {
+ font-size: 7px;
+ line-height: 8px;
+ letter-spacing: 0.034px;
+ margin-top: 1px;
+ color: #777776;
+ min-height: 8px;
+}
+
+.warning {
+ padding-top: 10px;
+ padding-bottom: 20px;
+ border-top: 1px solid #B9B29E;
+}
+
+.warning__desk {
+ padding-left: 6px;
+ font-size: 7px;
+ line-height: 8px;
+}
+
+.warning__desk div {
+ margin-bottom: 7px;
+}
+
+.warning__desk-color {
+ color: #777776;
+ letter-spacing: 0.004px;
+}

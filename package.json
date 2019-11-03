@@ -1,0 +1,57 @@
+{
+  "name": "template-for-site",
+  "version": "1.0.0",
+  "description": "Start page",
+  "author": "Yaroslav Shevtsov",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Director099/template-for-site.git"
+  },
+  "config": {
+    "source": "src",
+    "build": "build"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "css-mqpacker": "^5.0.1",
+    "del": "^2.2.2",
+    "pug-lint": "^2.5.0",
+    "stylelint": "^10.0.0",
+    "stylelint-order": "^2.0.0",
+    "stylelint-selector-bem-pattern": "^2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-csso": "^2.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-pretty-html": "^2.0.9",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-svgmin": "^1.2.3",
+    "gulp-svgstore": "^6.1.0",
+    "gulp-tinypng": "^1.0.2",
+    "gulp-uglify": "^3.0.0",
+    "glob-exec": "^0.1.1",
+    "postcss-import": "^12.0.1",
+    "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.2.5",
+    "bootstrap": "^4.0.0-beta.3",
+    "jquery": "^3.2.1",
+    "normalize.css": "^8.0.0",
+    "owl.carousel": "^2.2.0",
+    "popper.js": "^1.13.0"
+  },
+  "scripts": {
+    "test": "npm run test:pug && npm run test:style && npm run test:js",
+    "test:pug": "glob-exec \"src/**/*.pug\" -- \"pug-lint {{files.join(' ')}}\"",
+    "test:style": "stylelint \"src/**/*.scss\" --syntax=scss",
+    "start": "gulp build && gulp serve",
+    "build": "gulp build"
+  },
+  "license": "ISC"
+}
