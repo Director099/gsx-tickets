@@ -324,6 +324,48 @@ img {
     margin-bottom: 15px;
 }
 
+.header {
+    margin-bottom: 20px;
+}
+
+.header__title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.043px;
+    min-height: 23px;
+    color: #690e3b;
+}
+
+.header__receipt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__receipt-text {
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.025px;
+    color: #1a1919;
+}
+
+.header__receipt-number {
+    font-size: 12px;
+    line-height: 14px;
+    color: #1a1919;
+}
+
+.header__receipt-text span {
+    color: #777776;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.025px;
+}
+
 .row {
     margin-left: -15px;
     margin-right: -15px;
@@ -342,6 +384,34 @@ img {
     padding-right: 15px;
 }
 
+.col-3 {
+    float: left;
+    width: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-5 {
+    float: left;
+    width: 41.66667%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-7 {
+    float: left;
+    width: 58.33333%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-9 {
+    float: left;
+    width: 75%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .col-8 {
     float: left;
     width: 66.66667%;
@@ -356,8 +426,181 @@ img {
     padding-right: 15px;
 }
 
+.way__point strong {
+    display: block;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    color: #690e3b;
+}
+
+.way__point span {
+    display: block;
+    font-weight: bold;
+    font-size: 9px;
+    line-height: 11px;
+    color: #777776;
+}
+
+.way__point {
+    margin-bottom: 7px;
+}
+
+.way__data, .way__time-number {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01px;
+    color: #690e3b;
+}
+
+.way__station-wrap--disabled {
+    opacity: 0.7;
+}
+
+.way__station {
+    margin-bottom: 3px;
+}
+
+.way__station-city {
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.009px;
+    margin-bottom: 2px;
+    color: #232323;
+}
+
+.way__station-rail {
+    font-weight: bold;
+    font-size: 8px;
+    line-height: 9px;
+    margin-bottom: 4px;
+    color: #1a1919;
+}
+
+.way__station-metro {
+    font-size: 7px;
+    line-height: 8px;
+    color: #1a1919;
+}
+
+.way__time-city {
+    font-size: 8px;
+    line-height: 9px;
+    letter-spacing: 0.009px;
+    color: #1a1919;
+}
+
+.way__time-city--eng {
+    font-size: 7px;
+    line-height: 8px;
+    letter-spacing: 0.01px;
+    color: #777776;
+}
+
+.info {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #b9b29e;
+}
+
+.info__locations {
+    padding: 10px;
+    border-right: 1px solid #b9b29e;
+}
+
+.info__location:not(:last-child) {
+    padding-bottom: 13px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #b9b29e;
+}
+
+.info__pos {
+    margin-top: 6px;
+}
+
+.info__pos span {
+    display: block;
+    font-weight: 700;
+}
+
+.info__pos--ru {
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.004px;
+    color: #690e3b;
+}
+
+.info__pos--eng {
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: 0.009px;
+    color: #777776;
+}
+
+.info__place strong {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01px;
+    color: #c6243f;
+}
+
+.info__place-pos {
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.01px;
+    color: #1a1919;
+}
+
+.info__place-pos span {
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.009px;
+    color: #777776;
+}
+
+.info__place-floor {
+    font-size: 8px;
+    line-height: 9px;
+    letter-spacing: 0.044px;
+    color: #1a1919;
+}
+
+.info__place-floor span {
+    font-size: 7px;
+    line-height: 8px;
+    letter-spacing: 0.044px;
+    color: #777776;
+}
+
+.info__location-large {
+    padding: 5px 0;
+    margin-left: -20px;
+}
+
 .header__logo {
     max-width: 115px;
+}
+
+.order {
+    padding-bottom: 9px;
+    margin-bottom: 17px;
+    border-bottom: 1px solid #b9b29e;
+}
+
+.order__info-name {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1a1919;
+}
+
+.order__info-brief {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.042px;
+    color: #1a1919;
 }
 
 .text-info__title {
