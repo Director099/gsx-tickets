@@ -1,0 +1,283 @@
+extends pug/layout.pug
+
+block meta
+  title Ticket+KRS
+block header
+
+block content
+  .header
+    .row
+      .col-4
+        .header__logo
+          img(src="img/content/logo.svg", alt="Логотип")
+      .col-8
+        .header__title
+          .header__title-text ЭЛЕКТРОННАЯ КВИТАНЦИЯ РАЗНЫХ СБОРОВ
+          span.header__title-eng Coupon of different charges
+        .header__receipt
+          .header__receipt-text номер квитанции / #[span receipt number]
+          span.header__receipt-number 48390440859020
+  img.ident(src="img/content/line-3.jpg", alt="линия")
+  .order.order--pb-n
+    .row
+      .col-4
+        .order__info
+          .order__info-name ИВАНОВ А. И.
+          span.order__info-brief ПН ***** 3456 #[br]01.01.2000 / RUS / M
+      .col-8
+        .info-detail
+          table(cellspacing="0" cellpadding="0" border="0")
+            tr
+              td
+                .info-detail__wrap
+                  .info-detail__text.info-detail__text--rus Сумма к возврату, руб.
+                  .info-detail__text.info-detail__text--eng Amount to be returned, RUB
+              td
+                .info-detail__wrap
+                  .info-detail__text 6244.4 (в т.ч. НДС 0% – 0, 20% – 26.67, получен НДС 20% – 33.92)
+            tr
+              td
+                .info-detail__wrap
+                  .info-detail__text.info-detail__text--rus Информация
+                  .info-detail__text.info-detail__text--eng Information
+              td
+                .info-detail__wrap
+                  .info-detail__text Возврат на карту (счет) плательщика
+                  .info-detail__text.info-detail__text--eng Return to the payer's card (account)
+  .info
+    .row
+      .col-4
+        .info-detail.info-detail--ident
+          table(cellspacing="0" cellpadding="0" border="0")
+            tr
+              td
+                .info-detail__wrap
+                  .info-detail__text.info-detail__text--rus Маршрут следования
+                  .info-detail__text.info-detail__text--eng Route
+            tr
+              td
+                .info-detail__wrap
+                  .info-detail__text.info-detail__text--rus Отправление
+                  .info-detail__text.info-detail__text--eng Departure
+      .col-8
+        .info-detail.info-detail--ident.info-detail--ml-ident
+          table(cellspacing="0" cellpadding="0" border="0")
+            tr
+              td
+                .info-detail__wrap
+                  .info-detail__text МОСКВА КАЗАНСКАЯ
+                  .info-detail__text.info-detail__text--eng MOSKVA KAZANSKAIA
+              td
+                .info-detail__wrap
+                  .info-detail__text СИМФЕРОПОЛЬ ПАСС
+                  .info-detail__text.info-detail__text--eng SIMFEROPOL PASS
+            tr
+              td
+                .info-detail__wrap
+                  .info-detail__text 05.09.2019 10:42  Местное время (МСК)
+                  .info-detail__text.info-detail__text--eng 05.09.2019 10:42  Local time (UTC+3)
+  .info-detail
+    .row
+      .col-8
+        table(cellspacing="0" cellpadding="0" border="0")
+          tr
+            td
+              .info-detail__wrap
+                .info-detail__text.info-detail__text--rus Перевозчик (ИНН)
+                .info-detail__text.info-detail__text--eng Carrier (ITN)
+            td
+              .info-detail__wrap
+                .info-detail__text АО ТК “ГСЭ” (7705445700)
+          tr
+            td
+              .info-detail__wrap
+                .info-detail__text.info-detail__text--rus Время до отправления поезда  с момента возврата
+                .info-detail__text.info-detail__text--eng Time to train departure
+            td
+              .info-detail__wrap
+                .info-detail__text 14:34
+          tr
+            td
+              .info-detail__wrap
+                .info-detail__text.info-detail__text--rus Дата и время возврата
+                .info-detail__text.info-detail__text--eng Date / time of refund
+            td
+              .info-detail__wrap
+                .info-detail__text 28.08.2019 14:14 (МСК)
+                .info-detail__text.info-detail__text--eng 28.08.2019 14:14 (UTC+3)
+        .warning.warning--detail
+          .warning__desk
+            div Зачисление причитающихся денежных средств за неиспользованный электронный билет осуществляется на банковскую карту, с помощью которой производилась оплата, в сроки,  установленные правилами платежных систем(от 7-ми до 30-ти календарных дней после оформления возврата). За дополнительной информацией по вопросам возврата денежных  средств необходимо обращаться в банк эмитент.
+            div.warning__desk-color Crediting due money for unused electronic ticket is carried out on a bank card, with which payment  was made, in time,established by the rules of payment systems (from 7 to 30 calendar days after processing the return). For additional information on money return issues, please contact the issuer bank.
+      .col-4
+        img(src="img/content/shtrih-5.jpg", alt="Штрихкод" style="padding-bottom: 15px")
+        img(src="img/content/shtrih-4.jpg", alt="Штрихкод")
+  img.ident(src="img/content/line-1.jpg", alt="линия")
+  .receipt
+    .row
+      .col-8
+        .receipt__title
+          span.receipt__title-name ЭЛЕКТРОННАЯ БАГАЖНАЯ КВИТАНЦИЯ
+          span.receipt__title-eng Baggage check
+      .col-4
+        .receipt__number.receipt__number--right
+          span номер квитанции 48390440858106
+          span check number
+  .order-info
+    .row
+      .col-4
+        div.order-info__desk
+          div ИВАНОВ А. И.
+          span ПН ***** 3456 01.01.2000 / RUS / M
+      .col-4
+        .info-detail
+          table(cellspacing="0" cellpadding="0" border="0")
+            tr
+              td
+                .info-detail__wrap
+                  .info-detail__text.info-detail__text--rus Поезд
+                  .info-detail__text.info-detail__text--eng Train
+              td
+                .info-detail__wrap
+                  .info-detail__text 027ВА
+      .col-4
+        .info-detail
+          table(cellspacing="0" cellpadding="0" border="0")
+            tr
+              td
+                .info-detail__wrap
+                  .info-detail__text.info-detail__text--rus Количество мест
+                  .info-detail__text.info-detail__text--eng Number of places
+              td
+                .info-detail__wrap
+                  .info-detail__text 3
+  .info
+    .row
+      .col-4
+        .info-detail.info-detail--ident
+          table(cellspacing="0" cellpadding="0" border="0")
+            tr
+              td
+                .info-detail__wrap
+                  .info-detail__text.info-detail__text--rus Маршрут следования
+                  .info-detail__text.info-detail__text--eng Route
+            tr
+              td
+                .info-detail__wrap
+                  .info-detail__text.info-detail__text--rus Отправление
+                  .info-detail__text.info-detail__text--eng Departure
+            tr
+              td
+                .info-detail__wrap
+                  .info-detail__text.info-detail__text--rus Наименование
+                  .info-detail__text.info-detail__text--eng Declared value, RUB
+            tr
+              td
+                .info-detail__wrap
+                  .info-detail__text.info-detail__text--rus Объявленная ценность, руб
+                  .info-detail__text.info-detail__text--eng Declared value, RUB
+      .col-8
+        .info-detail.info-detail--ident.info-detail--ml-ident
+          table(cellspacing="0" cellpadding="0" border="0")
+            tr
+              td
+                .info-detail__wrap
+                  .info-detail__text МОСКВА КАЗАНСКАЯ
+                  .info-detail__text.info-detail__text--eng MOSKVA KAZANSKAIA
+              td
+                .info-detail__wrap
+                  .info-detail__text СИМФЕРОПОЛЬ ПАСС
+                  .info-detail__text.info-detail__text--eng SIMFEROPOL PASS
+            tr
+              td
+                .info-detail__wrap
+                  .info-detail__text 05.09.2019 10:42  Местное время (МСК)
+                  .info-detail__text.info-detail__text--eng 05.09.2019 10:42  Local time (UTC+3)
+            tr
+              td
+                .info-detail__wrap
+                  .info-detail__text Диван, чемодан, саквояж
+                  .info-detail__text.info-detail__text--eng
+            tr
+              td
+                .info-detail__wrap
+                  .info-detail__text 150
+                  .info-detail__text.info-detail__text--eng
+              td
+                .info-detail__wrap
+                  .info-detail__text Примечание
+                  .info-detail__text.info-detail__text--eng Note
+              td
+                .info-detail__wrap
+                  .info-detail__text Багаж в купе, #[br] вагон № 08
+
+  .info-detail
+    .row
+      .col-6
+        table(cellspacing="0" cellpadding="0" border="0")
+          tr
+            td
+              .info-detail__wrap
+                .info-detail__text.info-detail__text--rus Тариф билет, руб
+                .info-detail__text.info-detail__text--eng Fare ticket, RUB
+            td
+              .info-detail__wrap
+                .info-detail__text 1791.20
+          tr
+            td
+              .info-detail__wrap
+                .info-detail__text.info-detail__text--rus Тариф плацкарта, руб.
+                .info-detail__text.info-detail__text--eng Fare reservation, RUB
+            td
+              .info-detail__wrap
+                .info-detail__text 6975.30
+          tr
+            td
+              .info-detail__wrap
+                .info-detail__text.info-detail__text--rus Цена, руб
+                .info-detail__text.info-detail__text--eng Price, RUB
+            td
+              .info-detail__wrap
+                .info-detail__text 8766.50 (в т.ч. НДС 0% - 0.00, 20% - 446.50))
+          tr
+            td
+              .info-detail__wrap
+                .info-detail__text.info-detail__text--rus Форма оплаты
+                .info-detail__text.info-detail__text--eng Payment
+            td
+              .info-detail__wrap
+                .info-detail__text Банковская карта *4564
+                .info-detail__text.info-detail__text--eng Credit card *4564
+
+      .col-6
+        table(cellspacing="0" cellpadding="0" border="0")
+          tr
+            td
+              .info-detail__wrap
+                .info-detail__text.info-detail__text--rus Класс обслуживания
+                .info-detail__text.info-detail__text--eng Сomp. class
+            td
+              .info-detail__wrap
+                .info-detail__text Четырехместное купе  2У
+                .info-detail__text.info-detail__text--eng Four-seater coupe  2У
+          tr
+            td
+              .info-detail__wrap
+                .info-detail__text.info-detail__text--rus Статус электронного билета
+                .info-detail__text.info-detail__text--eng E-ticket status
+            td
+              .info-detail__wrap
+                .info-detail__text Оформлен возврат
+                .info-detail__text.info-detail__text--eng Refunded
+          tr
+            td
+              .info-detail__wrap
+                .info-detail__text.info-detail__text--rus Дата формирования квитанции
+                .info-detail__text.info-detail__text--eng Coupon issued
+            td
+              .info-detail__wrap
+                .info-detail__text 29.10.2019  10:42 (MCK)
+                .info-detail__text.info-detail__text--eng 29.10.2019  10:42 (UTC+3)
+
+  img(src="img/content/line-1.jpg", alt="линия")
+  block footer
